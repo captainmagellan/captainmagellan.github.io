@@ -1,0 +1,33 @@
+h1 {
+  transition: all 0.5s;
+}
+h1:hover {
+  font-size: 300%;
+}
+.album {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  width: 30%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  transition: all 0.5s;
+}
+
+.card > p {
+  transition: all 0.2s;
+    text-align: center;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card:hover {
+  height: 34%;
+  width: 34%;
+  font-size: 120%;
+}
