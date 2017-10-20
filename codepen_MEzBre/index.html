@@ -2,14 +2,61 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Front end Lab</title>
+  <title>Front-end Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
 
-      <link rel="stylesheet" href="css/style.css">
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      h1 {
+  transition: all 0.5s;
+}
+.bigHead:hover {
+  font-size: 260%;
+}
+.album {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
-  
+.card {
+  width: 30%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  transition: all 0.5s;
+}
+
+.card > p {
+  transition: all 0.2s;
+    text-align: center;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card:hover {
+  height: 31%;
+  width: 31%;
+  font-size: 110%;
+}
+
+label {
+  float: left;
+  padding-left: 5px;
+}
+
+hr {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
 </head>
 
 <body>
@@ -21,7 +68,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="https://www.captainmagellan.github.io">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://www.linkedin.com/in/samuelbars">Linkedin</a>
@@ -34,7 +81,7 @@
 </nav>
 <div class="container text-center">
   <div class="jumbotron">
-    <h1 class="jumbotron-heading">Welcome to my front-end experiments page</h1>
+    <h1 class="jumbotron-heading bigHead">Welcome to my front-end experiments page</h1>
     <br>
     <h4 class="alert">I'll try to do stuff there</h4>
   </div>
@@ -42,10 +89,9 @@
   <p>Nullam id dapibus tellus. Donec nec aliquam lorem. Mauris sit amet suscipit velit. Donec laoreet vehicula vehicula. Vivamus ac tincidunt magna, eu cursus nisl. Ut non finibus nulla. Curabitur suscipit quis mi in aliquam. Phasellus magna tortor, scelerisque ac pharetra nec, tristique eget orci. Aliquam et accumsan nibh, sed imperdiet velit. Donec tristique turpis sit amet leo consequat fringilla. Sed quis luctus lorem. Curabitur velit ligula, auctor a lectus sed, ullamcorper maximus dui. Fusce fringilla ullamcorper eros a vulputate. Curabitur ac venenatis mi, non gravida leo. Suspendisse ullamcorper lacus et purus consectetur interdum. Aliquam eget elit a libero vestibulum imperdiet. </p>
 </div>
 <div class="album text-muted">
-  <div class="jumbotron">
-    <h1 class="jumbotron-heading text-center">Photo Gallery</h1>
-  </div>
   <div class="container">
+    <h1>Photo Gallery</h1>
+    <hr>
     <div class="row">
       <div class="card">
         <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1472856053553-799da7ffa653?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb" alt="responsive image">
@@ -74,6 +120,15 @@
     </div>
   </div>
 </div>
+<div class="container">
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Tools used</h4>
+    <p>I primarily used bootstrap to design this page. I also used pure css and html to enhance it.</p>
+    <hr>
+    <p>This page is being built, so look forward for the added features that will come soon !!</p>
+  </div>
+</div>
+  
   
 </body>
 </html>
