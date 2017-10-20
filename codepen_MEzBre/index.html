@@ -48,11 +48,16 @@ label {
   padding-left: 5px;
 }
 
-hr {
-	height: 10px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+input {
+  margin-bottom: 1.5%;
+  margin-right: 1%;
 }
+
+#someButton {
+  cursor: pointer;
+}
+
+
     </style>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -81,11 +86,16 @@ hr {
 </nav>
 <div class="container text-center">
   <div class="jumbotron">
+    <div class="form-inline justify-content-center">
+      <h5 class="alert" id="inputFirstP">First of all, type-in your name(or any pseudo you want)</h5>
+      <input class="form-control" type="text" placeholder="Name">
+      <p class="btn btn-primary" id="someButton">Click here !!</p> 
+    </div>
     <h1 class="jumbotron-heading bigHead">Welcome to my front-end experiments page</h1>
     <br>
-    <h4 class="alert">I'll try to do stuff there</h4>
+    <h4 class="alert">I'll try to build cool stuff there</h4>
   </div>
-  <p>Donec fringilla ultricies sem non sagittis. Suspendisse ac pellentesque elit, porta finibus lectus. <blockquote class="blockquote">Sed at elit rutrum, hendrerit arcu et, porta augue. Nam egestas venenatis euismod. </blockquote> Nullam quis est et ex facilisis vulputate. Aenean ut ipsum erat. Quisque ut sapien nisl.</p>
+  <p>Donec fringilla ultricies sem non sagittis. Suspendisse ac pellentesque elit, porta finibus lectus. <blockquote class="blockquote float-left">" Sed at elit rutrum, hendrerit arcu et, porta augue. Nam egestas venenatis euismod. Nullam quis est et ex facilisis vulputate. Aenean ut ipsum erat. Quisque ut sapien nisl. "</blockquote></p>
   <p>Nullam id dapibus tellus. Donec nec aliquam lorem. Mauris sit amet suscipit velit. Donec laoreet vehicula vehicula. Vivamus ac tincidunt magna, eu cursus nisl. Ut non finibus nulla. Curabitur suscipit quis mi in aliquam. Phasellus magna tortor, scelerisque ac pharetra nec, tristique eget orci. Aliquam et accumsan nibh, sed imperdiet velit. Donec tristique turpis sit amet leo consequat fringilla. Sed quis luctus lorem. Curabitur velit ligula, auctor a lectus sed, ullamcorper maximus dui. Fusce fringilla ullamcorper eros a vulputate. Curabitur ac venenatis mi, non gravida leo. Suspendisse ullamcorper lacus et purus consectetur interdum. Aliquam eget elit a libero vestibulum imperdiet. </p>
 </div>
 <div class="album text-muted">
@@ -95,7 +105,7 @@ hr {
     <div class="row">
       <div class="card">
         <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1472856053553-799da7ffa653?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb" alt="responsive image">
-        <p class="card-text">Violet mountain of supreme pureness</p>
+        <p class="card-text">A beautiful violet mountain</p>
       </div>
       <div class="card">
         <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1480241352829-e1573ff2414e?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb" alt="responsive image">
@@ -106,8 +116,8 @@ hr {
         <p class="card-text">Better than hiking</p>
       </div>
       <div class="card">
-        <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1483389127117-b6a2102724ae?dpr=1&auto=format&fit=crop&w=967&q=60&cs=tinysrgb" alt="responsive image">
-        <p class="card-text">In action</p>
+        <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1500912708295-4cf8b060f381?w=1350" alt="responsive image">
+        <p class="card-text">The fuel of many workplaces</p>
       </div>
       <div class="card">
         <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1423012373122-fff0a5d28cc9?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb" alt="responsive image">
@@ -125,10 +135,11 @@ hr {
     <h4 class="alert-heading">Tools used</h4>
     <p>I primarily used bootstrap to design this page. I also used pure css and html to enhance it.</p>
     <hr>
-    <p>This page is being built, so look forward for the added features that will come soon !!</p>
+    <p>This page is still being built, so look forward for the added features that will come soon !!</p>
   </div>
 </div>
   
-  
+    <script  src="js/index.js"></script>
+
 </body>
 </html>
