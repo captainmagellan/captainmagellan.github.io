@@ -10,7 +10,308 @@
       <style>
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
       h1 {
+  transition: all 0.5<!DOCTYPE html>
+
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Front-end Lab</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+　
+
+      <style>
+
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+
+      h1 {
+
   transition: all 0.5s;
+
+}
+
+　
+
+.bigHead {
+
+  font-size: 210%;
+
+}
+
+.bigHead:hover {
+
+  font-size: 220%;
+
+}
+
+.album {
+
+  padding-top: 3rem;
+
+  padding-bottom: 3rem;
+
+}
+
+　
+
+.card {
+
+  display: block;
+
+  width: 32%;
+
+  padding: .75rem;
+
+  margin-bottom: 2rem;
+
+  border: 0;
+
+  transition: all 0.5s;
+
+}
+
+　
+
+.card > p {
+
+  transition: all 0.2s;
+
+    text-align: center;
+
+}
+
+　
+
+.card > img {
+
+  margin-bottom: .75rem;
+
+}
+
+　
+
+.card:hover {
+
+  height: 33.333333%;
+
+  width: 33.333333%;
+
+  font-size: 110%;
+
+}
+
+　
+
+label {
+
+  float: left;
+
+  padding-left: 5px;
+
+}
+
+　
+
+input {
+
+  margin-bottom: 1.5%;
+
+  margin-right: 1%;
+
+}
+
+　
+
+#someButton {
+
+  cursor: pointer;
+
+}
+
+　
+
+　
+
+    </style>
+
+　
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+　
+
+</head>
+
+　
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <a class="navbar-brand" href="#">Front-end Lab</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+
+        <a class="nav-link" href="https://www.captainmagellan.github.io" target"_blank">Home <span class="sr-only">(current)</span></a>
+
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link" href="https://www.linkedin.com/in/samuelbars" target="_blank">Linkedin</a>
+
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link" href="https://github.com/captainmagellan">Github</a>
+
+      </li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
+<div class="container text-center">
+
+  <div class="jumbotron">
+
+    <div class="form-inline justify-content-center">
+
+      <h5 class="alert" id="inputFirstP">First of all, type-in your first name(or any pseudo you want)</h5>
+
+      <input class="form-control" type="text" placeholder="Name">
+
+      <p class="btn btn-primary" id="someButton">Click here !!</p> 
+
+    </div>
+
+    <h1 class="jumbotron-heading bigHead">Welcome to my front-end experiments page</h1>
+
+    <br>
+
+    <h4 class="alert">I'll try to build cool stuff there</h4>
+
+  </div>
+
+  <p>Donec fringilla ultricies sem non sagittis. Suspendisse ac pellentesque elit, porta finibus lectus. <blockquote class="blockquote float-left">" Sed at elit rutrum, hendrerit arcu et, porta augue. Nam egestas venenatis euismod. Nullam quis est et ex facilisis vulputate. Aenean ut ipsum erat. Quisque ut sapien nisl. "</blockquote></p>
+
+  <p>Nullam id dapibus tellus. Donec nec aliquam lorem. Mauris sit amet suscipit velit. Donec laoreet vehicula vehicula. Vivamus ac tincidunt magna, eu cursus nisl. Ut non finibus nulla. Curabitur suscipit quis mi in aliquam. Phasellus magna tortor, scelerisque ac pharetra nec, tristique eget orci. Aliquam et accumsan nibh, sed imperdiet velit. Donec tristique turpis sit amet leo consequat fringilla. Sed quis luctus lorem. Curabitur velit ligula, auctor a lectus sed, ullamcorper maximus dui. Fusce fringilla ullamcorper eros a vulputate. Curabitur ac venenatis mi, non gravida leo. Suspendisse ullamcorper lacus et purus consectetur interdum. Aliquam eget elit a libero vestibulum imperdiet. </p>
+
+</div>
+
+<div class="album text-muted">
+
+  <div class="container">
+
+    <h1>Photo Gallery</h1>
+
+    <hr>
+
+    <div class="row">
+
+      <div class="card">
+
+        <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1472856053553-799da7ffa653?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb" alt="responsive image">
+
+        <p class="card-text">A beautiful violet mountain</p>
+
+      </div>
+
+      <div class="card">
+
+        <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1480241352829-e1573ff2414e?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb" alt="responsive image">
+
+        <p class="card-text">Another beautiful mountain</p>
+
+      </div>
+
+      <div class="card">
+
+        <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1505238680356-667803448bb6?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb" alt="responsive image">
+
+        <p class="card-text">Better than hiking</p>
+
+      </div>
+
+      <div class="card">
+
+        <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1500912708295-4cf8b060f381?w=1350" alt="responsive image">
+
+        <p class="card-text">The fuel of many workplaces</p>
+
+      </div>
+
+      <div class="card">
+
+        <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1423012373122-fff0a5d28cc9?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb" alt="responsive image">
+
+        <p class="card-text">Skateboard. One day maybe... </p>
+
+      </div>
+
+      <div class="card">
+
+        <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1441794016917-7b6933969960?dpr=1&auto=format&fit=crop&w=1351&q=60&cs=tinysrgb" alt="responsive image">
+
+        <p class="card-text">A sunny place</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="alert alert-success" role="alert">
+
+    <h4 class="alert-heading">Tools used</h4>
+
+    <p>I primarily used bootstrap to design this page. I also used simple css and html to enhance it.</p>
+
+    <hr>
+
+    <p>This page is still being built, so look forward for the added features that will come soon !!</p>
+
+  </div>
+
+</div>
+
+  
+
+    <script  src="js/index.js"></script>
+
+　
+
+</body>
+
+</html>
+
+　
+s;
 }
 
 .bigHead {
